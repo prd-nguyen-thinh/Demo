@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.3 on darwin)" generated="2026-03-18T16:09:21.996291" rpa="false" schemaversion="5">
+<suite id="s1" name="First project" source="/Users/thinh.nguyen/Documents/Auto/First_project">
+<suite id="s1-s1" name="Tests" source="/Users/thinh.nguyen/Documents/Auto/First_project/tests">
+<suite id="s1-s1-s1" name="Login" source="/Users/thinh.nguyen/Documents/Auto/First_project/tests/login.robot">
+<test id="s1-s1-s1-t1" name="TC01 - Login successfully" line="15">
+<kw name="Open My Browser" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-18T16:09:22.071917" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-18T16:09:22.071757" elapsed="2.803226"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-18T16:09:24.875609" elapsed="1.383173"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-03-18T16:09:26.259119" elapsed="0.000528"/>
+</kw>
+<status status="PASS" start="2026-03-18T16:09:22.071384" elapsed="4.188430"/>
+</kw>
+<kw name="Login To Practice Page" owner="login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-18T16:09:26.261931" level="INFO">Typing text 'student1' into text field 'css:#username'.</msg>
+<arg>${TXT_USERNAME}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-18T16:09:26.261375" elapsed="1.629566"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-03-18T16:09:27.893435" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-03-18T16:09:28.935561" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${TXT_PASSWORD}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-18T16:09:27.892392" elapsed="1.584791"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-18T16:09:29.480036" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>${BTN_SUBMIT}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-18T16:09:29.478569" elapsed="2.600392"/>
+</kw>
+<arg>student1</arg>
+<arg>Password123</arg>
+<status status="PASS" start="2026-03-18T16:09:26.260807" elapsed="5.818789"/>
+</kw>
+<kw name="Verify Element Is Displayed" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-03-18T16:09:42.834956" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-18T16:09:42.835239" level="FAIL">Element '//h1[@class='post-title']' not visible after 10 seconds.</msg>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-03-18T16:09:32.081839" elapsed="10.759027">Element '//h1[@class='post-title']' not visible after 10 seconds.</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-03-18T16:09:42.841049" elapsed="0.000080"/>
+</kw>
+<arg>${LBL_SUCCESS}</arg>
+<status status="FAIL" start="2026-03-18T16:09:32.080615" elapsed="10.760623">Element '//h1[@class='post-title']' not visible after 10 seconds.</status>
+</kw>
+<kw name="Verify Element Is Displayed" owner="common">
+<arg>${BTN_LOGOUT}</arg>
+<status status="NOT RUN" start="2026-03-18T16:09:42.841417" elapsed="0.000060"/>
+</kw>
+<kw name="Close My Browser" owner="common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-03-18T16:09:42.841876" elapsed="0.576011"/>
+</kw>
+<status status="PASS" start="2026-03-18T16:09:42.841677" elapsed="0.576442"/>
+</kw>
+<status status="FAIL" start="2026-03-18T16:09:22.069953" elapsed="21.348349">Element '//h1[@class='post-title']' not visible after 10 seconds.</status>
+</test>
+<status status="FAIL" start="2026-03-18T16:09:22.013532" elapsed="21.412309"/>
+</suite>
+<status status="FAIL" start="2026-03-18T16:09:22.012277" elapsed="21.416049"/>
+</suite>
+<status status="FAIL" start="2026-03-18T16:09:21.998817" elapsed="21.432308"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="First project" id="s1" pass="0" fail="1" skip="0">First project</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">First project.Tests</stat>
+<stat name="Login" id="s1-s1-s1" pass="0" fail="1" skip="0">First project.Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
