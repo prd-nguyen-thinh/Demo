@@ -1,3 +1,2 @@
 thinh260.robotc
-ADd thêm 1 text
-ffa
+ADd thêm 1 text: Thinh ABC
