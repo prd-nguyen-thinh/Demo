@@ -5,7 +5,7 @@ Library    SeleniumLibrary
 ${BROWSER}    chrome
 ${URL}        https://practicetestautomation.com/practice-test-login/
 
-
+# Thinh edit
 *** Keywords ***
 Open My Browser
     Open Browser    ${URL}    ${BROWSER}
