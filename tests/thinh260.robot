@@ -1,2 +1,2 @@
 thinh260.robotc
-ADd thêm 1 text: Hanh BCD
+ADd thêm 1 text: Thinh ABC
