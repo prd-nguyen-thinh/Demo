@@ -1,2 +1,2 @@
 Thinh demo
-Thinh demo 2 lần
+2 lần
